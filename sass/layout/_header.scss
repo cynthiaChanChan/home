@@ -1,4 +1,34 @@
 .header {
     background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .95)), 
+        url("../img/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr min-content 3.75rem 1fr;
+    grid-row-gap: 1rem;
+    padding: 2.5rem 5rem 5rem 5rem;
+
+    &__logo {
+        height: 1.9rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        justify-self: start;
+        align-self: start;
+    }
+
+    &__text {
+        
+    }
+
+    &__seenon-logos {
+        img {
+            height: 1.56rem;
+        }
+    }
 }

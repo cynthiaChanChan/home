@@ -8,9 +8,8 @@
     background-color: $color-white;
     height: 2px;
     width: 2.8rem;
-    margin-top: 2.5rem;
     display: block;
-    margin: 2.5rem auto 0;
+    margin: 2.5rem auto;
 
     &::before,
     &::after {
@@ -26,6 +25,6 @@
     }
 
     &::after {
-        transform: translateY(1rem);
+        transform: translateY(.9rem);
     }
 }
