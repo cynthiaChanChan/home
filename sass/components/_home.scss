@@ -50,12 +50,20 @@
         grid-column-gap: .7rem;
         align-items: center;
         font-size: 1rem;
-        margin-left: 1.25rem;
+        margin: 0 1.25rem; 
 
         svg {
             fill: $color-primary;
             height: 1.3rem;
             width: 1.3rem;
+        }
+
+        @include respond(extra-large) {
+            margin: 0 .8rem;
+        }
+
+        @include respond(large) {
+            font-size: .9rem;
         }
     }
 

@@ -29,9 +29,13 @@ body {
 		[center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
 
 	@include respond(large) {
-		grid-template-rows: 3.75rem min-content 40vw repeat(3, min-content);
+		grid-template-rows: 3.75rem 80vh min-content 40vw repeat(3, min-content);
 		grid-template-columns: [full-start] minmax(3.75rem, 1fr) 
 		[center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
+	}
+
+	@include respond(medium) {
+		grid-template-rows: 3.75rem 70vh;
 	}
 }
 
